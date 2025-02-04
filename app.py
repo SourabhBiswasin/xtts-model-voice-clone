@@ -63,7 +63,7 @@ config.load_json(os.path.join(model_path, "config.json"))
 model = Xtts.init_from_config(config)
 model.load_checkpoint(
     config,
-    checkpoint_path=os.path.join(model_path, "model.pth"),
+    checkpoint_path=os.path.join(model_path, "model.path"),
     vocab_path=os.path.join(model_path, "vocab.json"),
     eval=True,
     use_deepspeed=True,
